@@ -1,0 +1,71 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightblue;
+
+    
+}
+.pianobox{
+    position: relative;
+    display: flex;
+}
+.white{
+    height: 20vw;
+    width: 5vw;
+    --background-color:white;
+    background-color: var(--background-color);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    transition: all 100ms ease-in-out;
+    border-radius: 4px;
+
+}
+.black{
+    background-color: black;
+    border-radius: 0.25rem;
+    --left:0;
+    height: 10vw;
+    width: 2vw;
+
+    position: absolute;
+    left: var(--left);
+}
+.black1{
+  --left:5vw;
+  transform: translateX(-50%);
+  
+}
+.black2{
+    --left:10vw;
+    transform: translateX(-50%);
+    
+  }
+
+  .black3{
+    --left:20vw;
+    transform: translateX(-50%);
+    
+  }
+
+  .black4{
+    --left:25vw;
+    transform: translateX(-50%);
+    
+  }
+
+  .black5{
+    --left:30vw;
+    transform: translateX(-50%);
+    
+  }
+  
+.white.active{
+    background-color: lightgrey;
+}
